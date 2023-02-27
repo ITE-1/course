@@ -49,6 +49,41 @@
 //     document.write("<h1>Долой старое, хотим нове</h1>");
 //     document.close();
 // }
-let a = 5,
-    b = 10;
-console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+// let a = 5,
+//     b = 10;
+// console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+// Моя версия Классной работы!
+// let numberOfFilms = [0];
+// numberOfFilms[0] = prompt(`Сколько фильмов вы посмотрели?`, ` `);
+// console.log(numberOfFilms[`0`]);
+// let personalMovieDB = {
+//     count: numberOfFilms[0],
+//     movies: { },
+//     actors: { },
+//     genres: [ ],
+//     privat: false,
+// };
+// let lastFilmsWatched = [];
+// lastFilmsWatched[0] = prompt(`Один из последних просмотренных фильмов`, ``);
+// lastFilmsWatched[1] = prompt(`Один из последних просмотренных фильмов`,``);
+// let filmsRate = [];
+// filmsRate[0] = prompt(`на сколько вы его оцените`, ``);
+// filmsRate[1] = prompt(`на сколько вы его оцените`, ``);
+//Версия классной работы автора
+const numberOfFilms = +prompt(`Сколько фильмов вы посмотрели?`, ` `);
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+const a = prompt(`Один из последних просмотренных фильмов`, ``),
+    b = prompt(`на сколько вы его оцените`,``),
+    c = prompt(`Один из последних просмотренных фильмов`,``),
+    d = prompt(`на сколько вы его оцените`,``);
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
