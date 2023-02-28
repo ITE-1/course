@@ -70,20 +70,24 @@
 // filmsRate[0] = prompt(`на сколько вы его оцените`, ``);
 // filmsRate[1] = prompt(`на сколько вы его оцените`, ``);
 //Версия классной работы автора
-const numberOfFilms = +prompt(`Сколько фильмов вы посмотрели?`, ` `);
+// const numberOfFilms = +prompt(`Сколько фильмов вы посмотрели?`, ` `);
 
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
-const a = prompt(`Один из последних просмотренных фильмов`, ``),
-    b = prompt(`на сколько вы его оцените`,``),
-    c = prompt(`Один из последних просмотренных фильмов`,``),
-    d = prompt(`на сколько вы его оцените`,``);
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
+// const a = prompt(`Один из последних просмотренных фильмов`, ``),
+//     b = prompt(`на сколько вы его оцените`,``),
+//     c = prompt(`Один из последних просмотренных фильмов`,``),
+//     d = prompt(`на сколько вы его оцените`,``);
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
-console.log(personalMovieDB);
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
+// console.log(personalMovieDB);
+//Урок 18 - условия
+if (4 == 9) {
+     console.log(`ok!`);
+}
