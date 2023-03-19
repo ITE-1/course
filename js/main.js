@@ -252,11 +252,25 @@
 
 // console.log(personalMovieDB);
 /////////////////My Work
-const a = 10;
+// const a = 10;
 
-if ( a == 10 ) {
-    alert('Верно!');
-} else {
-    alert('Неверно');
+// if ( a == 10 ) {
+//     alert('Верно!');
+// } else {
+//     alert('Неверно');
+// }
+// //
+'use strict'
+const min = 38;
+if (min >= 0 && min <= 14) {
+    alert('в первуй четверть часа!');
 }
-//
+if (min >= 15 && min <= 30) {
+    alert('во вторую четверть часа!');
+}
+if (min >= 31 && min <= 44) {
+    alert('в третью четверть часа!');
+}
+if (min >= 45 && min <= 59) {
+    alert('4/4');
+}
