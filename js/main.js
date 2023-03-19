@@ -88,6 +88,174 @@
 // personalMovieDB.movies[c] = d;
 // console.log(personalMovieDB);
 //Урок 18 - условия
-if (4 == 9) {
-     console.log(`ok!`);
+// if (4 == 4) {
+//      console.log(`ok!`);
+// } else {
+//     console.log(`Error`);
+// };
+
+
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('Mnogo');
+// } else {
+//     console.log('ok!');
+// }
+
+// (num === 50) ? console.log('ok') : console.log('error');
+
+// const num = 50;
+// switch (num) { 
+//     case 49:
+//         console.log('неверно');
+//         break;
+//     case 100:
+//         console.log('неверно');
+//         break;
+//     case 51:
+//         console.log('ok');
+//         break;
+//     default:
+//         console.log('не в этот раз');
+//         break;
+// }
+
+//Урок 19 (Логические операторы)
+// const hamburget = true;
+// const fries = true;
+
+// if (hamburget && fries) {
+//     console.log('я сыт!');
+// }
+// console.log((hamburget && fries));
+
+
+// const hamburget = 3;
+// const fries = 1;
+// const cola = 0;
+
+// console.log(hamburget === 3 && cola && fries);
+
+// console.log(1 && 1);
+// console.log(1 && 5);
+// console.log(null && 0); 
+// console.log(0 && 'fsfasfa');
+
+
+// if (hamburget ===3 && cola === 1 && fries) {
+//     console.log('все сыт!');
+// } else {
+//     console.log('мы уходим!');
+
+// const hamburget = 3;
+// const fries = 1;
+// const cola = 0;
+// const nuggets = 2;
+
+// if (hamburget === 3 && cola === 2 || fries === 1 && nuggets) {
+//         console.log('все довольны!');
+//     } else {
+//         console.log('мы уходим!'); 
+//     };
+
+//     let johnReport, alexReport, samReport, mariaReport = 'done';
+//     console.log(johnReport || alexReport || samReport || mariaReport);
+
+//     console.log(!0);
+
+    
+//     let hamburger;
+// const fries = NaN;
+// const cola = 0;
+// const nuggets = 2;
+
+
+// if (hamburger && cola || fries === 3 && nuggets) {
+//    console.log('Done!');
+// }
+//Урок 20 Циклы
+// let num = 50;
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
+// }
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 55);
+
+// for (let i = 1; i <= 8; i++) {
+//     console.log(num);
+//     num++;
+// }
+// for (let i = 1; i < 10; i++) {
+//     if (i === 6) {
+//         continue; 
+//     }
+//     console.log(i);
+// }
+
+//Урок 21
+// for ( let i = 0; i < 3; i++ ) {
+//     console.log(i);
+//     for ( let j = 0; j < 3; j++) {
+//         console.log(j);
+//     }
+// }
+// let result = '';
+// const length = 7;
+
+// for (let i = 1; i < length; i++) {
+//     for (let j = 0; j < i; j++) {
+//         result += "*";
+//     }
+//     result += '\n';
+// }; 
+// console.log(result);
+//Практическое задание 1.1
+// 'use strict'
+// const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?');
+
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// };
+// const a = prompt('Один из последних просмотренных фильмов', ''),
+//     b = prompt('на сколько вы его оцените?', ''),
+//     c = prompt('Один из последних просмотренных фильмов', ''),
+//     d = prompt('на сколько вы его оцените?', '');
+
+// // const a, b, c, d = fiveLetters
+
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
+
+
+// for ( let i = 0; i < 2; i++) {
+//     a = prompt('Один из последних просмотренных фильмов', ''),
+//     b = prompt('на сколько вы его оцените?', '');
+
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//     personalMovieDB.movies[a] = b;
+//     console.log('done');
+//     } else { 
+//         console.log('error!');
+//         i--;
+//     }
+    
+// }
+
+// console.log(personalMovieDB);
+/////////////////My Work
+const a = 10;
+
+if ( a == 10 ) {
+    alert('Верно!');
+} else {
+    alert('Неверно');
 }
