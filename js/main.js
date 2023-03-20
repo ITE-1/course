@@ -215,7 +215,6 @@
 // }; 
 // console.log(result);
 //Практическое задание 1.1
-// 'use strict'
 // const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?');
 
 // const personalMovieDB = {
@@ -225,16 +224,16 @@
 //     genres: [],
 //     privat: false
 // };
-// const a = prompt('Один из последних просмотренных фильмов', ''),
-//     b = prompt('на сколько вы его оцените?', ''),
-//     c = prompt('Один из последних просмотренных фильмов', ''),
-//     d = prompt('на сколько вы его оцените?', '');
-
-// // const a, b, c, d = fiveLetters
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-
+// if (personalMovieDB.count < 10) {
+//     console.log('просмотренно мало фильмов');
+// } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//     console.log('вы классический зритель');
+// } else if (personalMovieDB.count >= 30) {
+//     console.log('вы киноман!');
+    
+// }else {
+//     console.log('произошла ошибка?');
+// }
 
 // for ( let i = 0; i < 2; i++) {
 //    const a = prompt('Один из последних просмотренных фильмов', ''),
@@ -247,7 +246,6 @@
 //         console.log('error!');
 //         i--;
 //     }
-// }
 // }
 
 // console.log(personalMovieDB);
@@ -274,4 +272,3 @@
 // if (min >= 45 && min <= 59) {
 //     alert('4/4');
 // }
-
