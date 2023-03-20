@@ -272,3 +272,57 @@
 // if (min >= 45 && min <= 59) {
 //     alert('4/4');
 // }
+// function showFirstMessage() {
+//     console.log('hello world!');
+
+// }
+// showFirstMessage();
+
+// function calc(a, b) {
+//     return (a + b );
+// }
+// console.log(calc(4, 3));
+// console.log(calc(10, 5));
+
+// function ret() {
+//     let num = 50;
+//     return num;
+// }
+// const anotherNum = ret();
+// console.log(anotherNum);
+
+// let anotherNum = function ret() {
+//     let num = 50;
+//     return num;
+// }
+// console.log(ret());
+// const calc = (a, b) => {
+//      return a + b 
+//     };
+// console.log(calc(5, 10));
+
+
+// let myTime = '4:20';
+// for ( let i = 0; i < 1; i++) {
+// const timeAgo = prompt('Сколько сейчас времени?', '');
+// if (timeAgo == myTime) {
+//     alert('Время накуриться!');
+//     break;
+// } else {
+//     alert('Приходи попозже!');
+//     i--;
+// }
+//}
+// const usdCurr = 28;
+// const discount = 0.9;
+
+// function convert (amount, curr) {
+//     return curr + amount;
+// }
+// function promotion(result) { 
+//     console.log(result * discount);
+// }
+// promotion(convert(500, usdCurr));
+
+// const res = convert (500, usdCurr);
+// promotion(res);
