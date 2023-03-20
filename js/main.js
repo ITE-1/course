@@ -326,3 +326,15 @@
 
 // const res = convert (500, usdCurr);
 // promotion(res);
+const str = "teSt";
+const arr = [1, 2, 4];
+console.log(arr.length);
+console.log(str.toUpperCase());
+console.log(str.toLocaleLowerCase());
+
+const fruit = 'some fruit';
+console.log(fruit.indexOf('o'));
+
+const logg = 'Hello World!';
+console.log(logg.slice(6, 10));
+console.log(logg.slice(6));
