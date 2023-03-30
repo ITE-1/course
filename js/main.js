@@ -405,23 +405,96 @@
 // }
 // writeYourGenres();
 //
-function first() {
-    setTimeout(function() {
-        console.log(1);
-    }, 500 );
-}
+// function first() {
+//     setTimeout(function() {
+//         console.log(1);
+//     }, 500 );
+// }
 
-function second() {
-    console.log(2);
+// function second() {
+//     console.log(2);
+// }
+// first();
+// second();
+// //
+// function learnJS(lang, callback) {
+//     console.log(`Я учу: ${lang}`);
+//     callback();
+// }
+// function done() {
+//     console.log('Я прошел этот урок!');
+// }
+// learnJS('JavaScript', done);
+
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function() {
+//         console.log('test');
+//     }
+// };
+// options.makeTest();
+// delete options.name;
+// for (let key in options) {
+//     if (typeof(options[key]) === 'object') {
+//         for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+//         }
+//     } else {
+//         console.log(`Свойств ${key} имеет значение ${options[key]}`);
+//     }
+// }
+// console.log(Object.keys(options).length);
+// const arr = [1, 2, 3, 6, 8];
+// // console.log(arr);
+// // //arr.push(10);
+// // for (let i = 0; i < arr.length; i++) {
+// //     console.log(arr[i]);
+// // }
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
+function copy(mainObj) {
+    let objCopy = {};
+    let key;
+    for (key in mainObj) {
+        objCopy[key] = mainObj[key];
+    }
+    return objCopy;
 }
-first();
-second();
+const numbers = {
+    a: 2,
+    b: 5,
+    c: {
+        x: 7,
+        y: 4
+    }
+};
+
+const newNumbers = copy(numbers);
+console.log(newNumbers);
+
+delete newNumbers.a;
+console.log(newNumbers);
+console.log(numbers);
+
+const oldArray = ['a', 'b', 'c'];
+const newArray = oldArray.slice();
+console.log(oldArray);
+console.log(newArray);
+newArray[1] = 'dsdsdsd';
+console.log(newArray);
 //
-function learnJS(lang, callback) {
-    console.log(`Я учу: ${lang}`);
-    callback();
+function log(a, b, c) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
-function done() {
-    console.log('Я прошел этот урок!');
-}
-learnJS('JavaScript',done);
+const num = [2, 5, 7];
+log(...num);
+console.log(num);
