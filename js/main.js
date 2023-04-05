@@ -459,42 +459,164 @@
 // arr.forEach(function(item, i, arr) {
 //     console.log(`${i}: ${item} внутри массива ${arr}`);
 // });
-function copy(mainObj) {
-    let objCopy = {};
-    let key;
-    for (key in mainObj) {
-        objCopy[key] = mainObj[key];
+// function copy(mainObj) {
+//     let objCopy = {};
+//     let key;
+//     for (key in mainObj) {
+//         objCopy[key] = mainObj[key];
+//     }
+//     return objCopy;
+// }
+// const numbers = {
+//     a: 2,
+//     b: 5,
+//     c: {
+//         x: 7,
+//         y: 4
+//     }
+// };
+
+// const newNumbers = copy(numbers);
+// console.log(newNumbers);
+
+// delete newNumbers.a;
+// console.log(newNumbers);
+// console.log(numbers);
+
+// const oldArray = ['a', 'b', 'c'];
+// const newArray = oldArray.slice();
+// console.log(oldArray);
+// console.log(newArray);
+// newArray[1] = 'dsdsdsd';
+// console.log(newArray);
+// //
+// function log(a, b, c) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+// const num = [2, 5, 7];
+// log(...num);
+// console.log(num);
+//создание
+// 'use strict'
+// let str = "some";
+// let strObj = new String(str);
+// const soldier = {
+//     health: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log('Say hello!');
+//     }
+// };
+// const john = {
+//     health: 100
+// };
+// john.__proto__ = soldier;
+// console.log(john.armor);
+// john.sayHello();
+//////////////////////////////////////////
+// 'use strict'
+// const personalMovieDB = {
+//     count: 0,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false,
+//     start: function()  {
+//         personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+    
+//         while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+//             personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//         }
+//     },
+//     detectPersolnalLevel: function () {
+//         if (personalMovieDB.count < 10) {
+//             console.log('просмотренно мало фильмов');
+//         } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+//             console.log('вы классический зритель');
+//         } else if (personalMovieDB.count >= 30) {
+//             console.log('вы киноман!');
+            
+//         }else {
+//             console.log('произошла ошибка?');
+//         }
+//     },
+    
+//     rememberMyFilms: function() { 
+//         for ( let i = 0; i < 2; i++) {
+//         const a = prompt('Один из последних просмотренных фильмов', '').trim(),
+//             b = prompt('на сколько вы его оцените?', '');
+
+//         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('done');
+//         } else { 
+//             console.log('error!');
+//             i--;
+//         }
+//         }
+//     },
+//     showMyDb: function (hidden) { 
+//         if (!hidden) {
+//             console.log(personalMovieDB);
+//         }
+//     },
+//     toggleShowMyDb: function () {
+//         if (personalMovieDB.privat) {
+//             personalMovieDB.privat = false;
+//         }
+//         else {personalMovieDB.privat = true;
+//         }
+
+//     },
+//     writeYourGenres: function() {
+//     for (let i = 1; i <= 3; i++) {
+//         let genre = prompt(`Ваш любимый жанр под номером ${i}`);
+//         if ( genre === '' || genre == null) {
+//             console.log('Введено не верно!'),
+//             i--;
+//         }
+//         else {
+//             personalMovieDB.genres[i - 1] = genre; 
+//         }
+       
+//     }
+//         personalMovieDB.genres.forEach((item, i) => {
+//             console.log(`Любимый жанр ${i + 1} - это ${item}`)
+//         });
+//     },
+// };
+
+// let switcher = null;
+// if (switcher) {
+//     console.log('working');
+// }
+// switcher = 1;
+// if (switcher) {
+//     console.log('working');
+// }
+'Use strict'
+// let number = 5; debugger
+// function logNumber() {
+//     let number = 4; debugger
+//     console.log(number);
+// }
+
+// number = 6;
+// logNumber(); debugger
+function createCounter() {
+    let counter = 0;
+    const myFunction = function() {
+        counter = counter + 1;
+        return counter;
     }
-    return objCopy;
+
+    return myFunction;
 }
-const numbers = {
-    a: 2,
-    b: 5,
-    c: {
-        x: 7,
-        y: 4
-    }
-};
+const increment = createCounter();
+const c1 = increment();
+const c2 = increment();
+const c3 = increment();
 
-const newNumbers = copy(numbers);
-console.log(newNumbers);
-
-delete newNumbers.a;
-console.log(newNumbers);
-console.log(numbers);
-
-const oldArray = ['a', 'b', 'c'];
-const newArray = oldArray.slice();
-console.log(oldArray);
-console.log(newArray);
-newArray[1] = 'dsdsdsd';
-console.log(newArray);
-//
-function log(a, b, c) {
-    console.log(a);
-    console.log(b);
-    console.log(c);
-}
-const num = [2, 5, 7];
-log(...num);
-console.log(num);
+console.log(c1, c2, c3);
