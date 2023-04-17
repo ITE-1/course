@@ -605,18 +605,109 @@
 
 // number = 6;
 // logNumber(); debugger
-function createCounter() {
-    let counter = 0;
-    const myFunction = function() {
-        counter = counter + 1;
-        return counter;
+// function createCounter() {
+//     let counter = 0;
+//     const myFunction = function() {
+//         counter = counter + 1;
+//         return counter;
+//     }
+
+//     return myFunction;
+// }
+// const increment = createCounter();
+// const c1 = increment();
+// const c2 = increment();
+// const c3 = increment();
+
+// console.log(c1, c2, c3);
+
+
+// const box = document.getElementById('box'),
+//     btns = document.getElementsByTagName('button'),
+//     hearts = document.querySelectorAll('.heart');
+    
+
+// // box.style.backgroundColor = 'red';
+// // box.style.width = '400px';
+
+// // btns[1].style.borderRadius = '0px',
+// // btns[0].style.backgroundColor = 'red';
+
+// // for (let i = 0; i < hearts.length; i++) {
+// //     hearts[i].style.backgroundColor = 'blue';
+// // }
+
+// // hearts.forEach(item => {
+// //     item.style.backgroundColor = 'blue'; 
+// // })
+
+// // hearts[0].replaceWith(btns[0]);
+// const div = document.createElement('div');
+// div.classList.add('black');
+// document.body.append(div);
+// div.innerHTML = '<h1>hello world</h1>';
+/////////////////
+// function pow(x, n) {
+//     let result = 1;
+//     for(let i = 0; i < n; i++) {
+//         result *=x;
+//     }
+//     return result;
+// }
+// pow(2, 1)
+//////////////
+// function factorial(n) {
+//     if (n === 0) {
+//         return 1;
+//     } else {
+//         return n * factorial(n - 1);
+//     }
+// }
+
+// function factorial(num) {
+//     if (num <= 1) {
+//         return 1;
+//     }
+//     return num * factorial(num - 1);
+// }
+// factorial(5);
+let students = {
+    js : [{
+        name: 'John',
+        progress: 100
+    }, {
+        name: 'Ivan',
+        progress: 60
+    }],
+    html: [{
+        name: 'Peter',
+        progress: 20
+    }, {
+        name: 'Ann',
+        progress: 18
+    }],
+    pro: [{
+        name: 'Sam',
+        progress: 10
+    }]
+};
+function getTheTotalProgress(data) {
+    let total = 0;
+    let students = 0;
+
+    for (let course of Object.values(data)) {
+        if (Array.isArray(course)) {
+            students += course.length;
+
+            for( let i = 0; i < course.length; i++) {
+                total += course[i].progress;
+            }  
+            
+            } else {
+                for (let subCourse of Object.values(data));
+            }
+        }
     }
+    return total / students;
 
-    return myFunction;
-}
-const increment = createCounter();
-const c1 = increment();
-const c2 = increment();
-const c3 = increment();
-
-console.log(c1, c2, c3);
+console.log(getTheTotalProgress(students));
